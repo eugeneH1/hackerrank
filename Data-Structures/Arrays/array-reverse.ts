@@ -7,5 +7,9 @@ function reverseArray(a: number[]): number[] {
   return arr;
 }
 
+const reverseArrayFunctional = (a: number[]): number[] => {
+  return [...a].reverse();
+}
 const a: number[] = [1, 2, 3, 4, 5];
 console.log(reverseArray(a));
+console.log(reverseArrayFunctional(a));
