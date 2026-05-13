@@ -42,4 +42,4 @@ function sweepApproach(n: number, queries: number[][]): number {
 
   return max;
 }
-console.log((5, queries));
+// console.log((5, queries));
