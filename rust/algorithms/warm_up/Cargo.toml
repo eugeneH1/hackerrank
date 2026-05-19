@@ -1,0 +1,4 @@
+[package]
+name = "hr-algorithms-warm-up"
+version = "0.1.0"
+edition = "2024"

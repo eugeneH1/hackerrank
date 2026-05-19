@@ -1,0 +1,439 @@
+   0.004463167s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="array_sum"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "array_sum", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/array_sum.rs", Edition2024) }
+   0.004725583s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="array_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-21cc530ec7c10795/bin-array_sum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014333250s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="array_sum"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "array_sum", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/array_sum.rs", Edition2024) }
+   0.014339958s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="array_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-e4302bc0027cf86a/test-bin-array_sum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014463958s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="birthday_cake_candles"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "birthday_cake_candles", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/birthday_cake_candles.rs", Edition2024) }
+   0.014467083s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="birthday_cake_candles"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-96ed39a68acbe36d/bin-birthday_cake_candles`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014581833s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="birthday_cake_candles"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "birthday_cake_candles", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/birthday_cake_candles.rs", Edition2024) }
+   0.014584542s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="birthday_cake_candles"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-57d3f56abd9127c7/test-bin-birthday_cake_candles`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014690500s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="compare_triplets"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "compare_triplets", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/compare_triplets.rs", Edition2024) }
+   0.014693167s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="compare_triplets"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-dd8aad4e09eb5f68/bin-compare_triplets`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014799500s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="compare_triplets"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "compare_triplets", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/compare_triplets.rs", Edition2024) }
+   0.014803500s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="compare_triplets"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-2209bbcc56eec2e2/test-bin-compare_triplets`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.014909917s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="diagonal_difference"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "diagonal_difference", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/diagonal_difference.rs", Edition2024) }
+   0.014912417s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="diagonal_difference"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-7af094d713c0b7a7/bin-diagonal_difference`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015017542s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="diagonal_difference"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "diagonal_difference", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/diagonal_difference.rs", Edition2024) }
+   0.015019917s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="diagonal_difference"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-226a9606620d25df/test-bin-diagonal_difference`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015124167s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="min_max_sum"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "min_max_sum", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/min_max_sum.rs", Edition2024) }
+   0.015126667s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="min_max_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-ad8f87dc047b16fa/bin-min_max_sum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015231833s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="min_max_sum"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "min_max_sum", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/min_max_sum.rs", Edition2024) }
+   0.015234250s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="min_max_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-b39ef0da16aa90be/test-bin-min_max_sum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015340625s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="plus_minus"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "plus_minus", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/plus_minus.rs", Edition2024) }
+   0.015342958s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="plus_minus"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-a8eb8fd96d4adb4e/bin-plus_minus`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015442125s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="plus_minus"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "plus_minus", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/plus_minus.rs", Edition2024) }
+   0.015444458s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="plus_minus"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-c2122302b418c488/test-bin-plus_minus`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015542042s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="staircase"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "staircase", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/staircase.rs", Edition2024) }
+   0.015544333s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="staircase"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-4df14c5a2eb3f84b/bin-staircase`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015643333s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="staircase"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "staircase", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/staircase.rs", Edition2024) }
+   0.015645625s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="staircase"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-57cfb8275fcd1dda/test-bin-staircase`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015746875s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="time_conversion"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: false }/TargetInner { name: "time_conversion", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/time_conversion.rs", Edition2024) }
+   0.015749458s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="time_conversion"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-4aff0ebfe8efcffd/bin-time_conversion`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015848125s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="time_conversion"}: cargo::core::compiler::fingerprint: fingerprint error for hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)/Check { test: true }/TargetInner { name: "time_conversion", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up/src/bin/time_conversion.rs", Edition2024) }
+   0.015850458s  INFO prepare_target{force=false package_id=hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up) target="time_conversion"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-algorithms-warm-up-33afca70d80f6c0d/test-bin-time_conversion`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.015963458s  INFO prepare_target{force=false package_id=hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays) target="array"}: cargo::core::compiler::fingerprint: fingerprint error for hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays)/Check { test: false }/TargetInner { name: "array", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays/src/bin/array.rs", Edition2024) }
+   0.015972208s  INFO prepare_target{force=false package_id=hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays) target="array"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-data-structures-arrays-fa1fdcf809c86d71/bin-array`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.016314625s  INFO prepare_target{force=false package_id=hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays) target="array"}: cargo::core::compiler::fingerprint: fingerprint error for hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays)/Check { test: true }/TargetInner { name: "array", doc: true, ..: with_path("/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays/src/bin/array.rs", Edition2024) }
+   0.016318750s  INFO prepare_target{force=false package_id=hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays) target="array"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/eugeneheynike/Documents/Code/hackerrank/rust/target/debug/.fingerprint/hr-data-structures-arrays-353a9d8901aba338/test-bin-array`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <std::backtrace::Backtrace>::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking hr-algorithms-warm-up v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/algorithms/warm_up)
+error: could not compile `hr-algorithms-warm-up` (bin "compare_triplets" test) due to 2 previous errors
+warning: build failed, waiting for other jobs to finish...
+    Checking hr-data-structures-arrays v0.1.0 (/Users/eugeneheynike/Documents/Code/hackerrank/rust/data_structures/arrays)
+error: could not compile `hr-algorithms-warm-up` (bin "compare_triplets") due to 2 previous errors
+error: could not compile `hr-data-structures-arrays` (bin "array" test) due to 1 previous error
+error: could not compile `hr-data-structures-arrays` (bin "array") due to 2 previous errors
