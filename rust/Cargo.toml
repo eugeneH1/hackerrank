@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
 members = [
-    "algorithms/warm_up",
-    "data_structures/arrays",
+    "algorithms",
+    "data_structures",
 ]

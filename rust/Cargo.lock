@@ -3,9 +3,9 @@
 version = 4
 
 [[package]]
-name = "hr-algorithms-warm-up"
+name = "hr-algorithms"
 version = "0.1.0"
 
 [[package]]
-name = "hr-data-structures-arrays"
+name = "hr-data-structures"
 version = "0.1.0"

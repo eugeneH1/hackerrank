@@ -92,28 +92,51 @@ function filterObstacles(obstacles: number[][], r_q: number, c_q: number): Direc
     }
     // Diagonal Movement
     else if (rowDelta === colDelta) {
+      let currDistance = getDistance(r, c, r_q, c_q);
       if (r > r_q) { // Row increases -> Up
         if (c > c_q) {
-          meta.d_r_u = [r, c] as Vector2; // Right Up
+          if (meta.d_r_u) {
+            let prevDistance = getDistance(meta.d_r_u[0], meta.d_r_u[1], r_q, c_q);
+            if (currDistance < prevDistance) meta.d_r_u = [r, c] as Vector2;
+          } else {
+            meta.d_r_u = [r, c] as Vector2; // Right Up
+          }
         } else if (c < c_q) {
-          meta.d_l_u = [r, c] as Vector2; // Left Up
+          if (meta.d_l_u) {
+            let prevDistance = getDistance(meta.d_l_u[0], meta.d_l_u[1], r_q, c_q);
+            if (currDistance < prevDistance) meta.d_l_u = [r, c] as Vector2;
+          } else {
+            meta.d_l_u = [r, c] as Vector2; // Left Up
+          }
         }
       } else if (r < r_q) { // Row decreases -> Down
-        if (c > c_q) {
-          meta.d_r_d = [r, c] as Vector2; // Right Down
-        } else if (c < c_q) {
-          meta.d_l_d = [r, c] as Vector2; // Left Down
+        if (c > c_q) { // Right Down
+          if (meta.d_r_d) {
+            let prevDistance = getDistance(meta.d_r_d[0], meta.d_r_d[1], r_q, c_q);
+            if (currDistance < prevDistance) meta.d_r_d = [r, c] as Vector2;
+          } else {
+            meta.d_r_d = [r, c] as Vector2;
+          }
+        } else if (c < c_q) { // Left Down
+          if (meta.d_l_d) {
+            let prevDistance = getDistance(meta.d_l_d[0], meta.d_l_d[1], r_q, c_q);
+            if (currDistance < prevDistance) meta.d_l_d = [r, c] as Vector2;
+          } else {
+            meta.d_l_d = [r, c] as Vector2;
+          }
         }
       }
     }
-    // obstacles.length = writeIndex
   }
   return meta;
 }
 
 function AbsoluteDistance(x1: number, x2: number): number {
   return Math.abs(x1 - x2)
+}
 
+function getDistance(x1: number, y1: number, x2: number, y2: number): number {
+  return Math.max(Math.abs(x1 - x2), Math.abs(y1 - y2));
 }
 function atEdge(x: number, y: number, n: number): boolean {
   return !(x < n && y < n && x >= 0 && y >= 0)
