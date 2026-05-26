@@ -1,0 +1,2 @@
+window.ALL_CRATES = ["arrays_2d_array","arrays_array","implementation_queens_attack_ii","warm_up_array_sum","warm_up_birthday_cake_candles","warm_up_compare_triplets","warm_up_diagonal_difference","warm_up_min_max_sum","warm_up_plus_minus","warm_up_staircase","warm_up_time_conversion"];
+//{"start":21,"fragment_lengths":[17,15,34,20,32,27,30,22,21,20,26]}
