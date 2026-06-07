@@ -1,0 +1,167 @@
+use std::env;
+use std::fs::File;
+use std::io::{self, BufRead, Write};
+use std::ptr::{self, null_mut};
+
+struct SinglyLinkedListNode {
+    data: i32,
+    next: *mut SinglyLinkedListNode,
+}
+
+struct SinglyLinkedList {
+    head: *mut SinglyLinkedListNode,
+    tail: *mut SinglyLinkedListNode,
+}
+
+impl SinglyLinkedListNode {
+    pub fn new(data: i32) -> *mut Self {
+        Box::into_raw(Box::new(SinglyLinkedListNode {
+            data,
+            next: ptr::null_mut(),
+        }))
+    }
+}
+
+impl Drop for SinglyLinkedListNode {
+    fn drop(&mut self) {
+        self.next = ptr::null_mut();
+    }
+}
+
+impl SinglyLinkedList {
+    pub fn new() -> Self {
+        SinglyLinkedList {
+            head: ptr::null_mut(),
+            tail: ptr::null_mut(),
+        }
+    }
+
+    pub fn insert_node(&mut self, data: i32) {
+        unsafe {
+            let node = SinglyLinkedListNode::new(data);
+
+            if self.head.is_null() {
+                self.head = node;
+            } else {
+                (*self.tail).next = node;
+            }
+
+            self.tail = node;
+        }
+    }
+}
+
+impl Drop for SinglyLinkedList {
+    fn drop(&mut self) {
+        while !self.head.is_null() {
+            unsafe {
+                if !self.head.is_null() {
+                    let head = Box::from_raw(self.head);
+                    self.head = head.next;
+                }
+            }
+        }
+
+        self.tail = ptr::null_mut();
+    }
+}
+
+fn print_singly_linked_list(head: *const SinglyLinkedListNode, sep: &str, fptr: &mut File) {
+    let mut node = head;
+
+    while !node.is_null() {
+        unsafe {
+            write!(fptr, "{}", (*node).data).ok();
+
+            node = (*node).next;
+        }
+
+        if !node.is_null() {
+            write!(fptr, "{}", sep).ok();
+        }
+    }
+}
+
+/*
+ * Complete the 'reverse' function below.
+ *
+ * The function is expected to return an INTEGER_SINGLY_LINKED_LIST.
+ * The function accepts INTEGER_SINGLY_LINKED_LIST llist as parameter.
+ */
+
+/*
+ * For your reference:
+ *
+ * SinglyLinkedListNode {
+ *     data: i32,
+ *     next: *mut SinglyLinkedListNode,
+ * };
+ *
+ */
+
+fn reverse(llist: *const SinglyLinkedListNode) -> *const SinglyLinkedListNode {
+    // let linked list start with nodes A -> B -> C
+    unsafe {
+        if llist.is_null() || (*llist).next.is_null() {
+            // null check && base case when llist = C
+            return llist;
+        }
+
+        // get pointers to current and next nodes
+        let current_node = llist as *mut SinglyLinkedListNode;
+        let next_node = (*current_node).next;
+
+        let new_head = reverse(next_node);
+
+        // we back through the call stack starting with B
+        // current_node = B
+        // next_node = C
+        (*next_node).next = current_node; // C.next = B 
+        (*current_node).next = std::ptr::null_mut(); // B.next = null_mut
+
+        new_head
+    }
+}
+
+fn main() {
+    let stdin = io::stdin();
+    let mut stdin_iterator = stdin.lock().lines();
+
+    let mut fptr = File::create(env::var("OUTPUT_PATH").unwrap()).unwrap();
+
+    let tests = stdin_iterator
+        .next()
+        .unwrap()
+        .unwrap()
+        .trim()
+        .parse::<i32>()
+        .unwrap();
+
+    for _ in 0..tests {
+        let llist_count = stdin_iterator
+            .next()
+            .unwrap()
+            .unwrap()
+            .trim()
+            .parse::<i32>()
+            .unwrap();
+        let mut llist = SinglyLinkedList::new();
+
+        for _ in 0..llist_count {
+            let llist_item = stdin_iterator
+                .next()
+                .unwrap()
+                .unwrap()
+                .trim()
+                .parse::<i32>()
+                .unwrap();
+
+            llist.insert_node(llist_item);
+        }
+
+        let llist1 = reverse(llist.head);
+
+        print_singly_linked_list(llist1, " ", &mut fptr);
+        writeln!(&mut fptr).ok();
+    }
+}

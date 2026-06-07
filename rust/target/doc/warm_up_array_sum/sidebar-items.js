@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["array_sum","array_sum_func","main"]};
