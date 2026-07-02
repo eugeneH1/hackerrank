@@ -1,0 +1,21 @@
+// Project-local debug tasks
+[
+  {
+    "label": "Debug Current Workspace Bin",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "sourceLanguages": ["rust"],
+    "build": {
+      "command": "cargo",
+      "args": [
+        "build",
+        "-p",
+        "${ZED_CUSTOM_RUST_PACKAGE:algorithms}",
+        "--bin",
+        "${ZED_STEM:main}",
+      ],
+    },
+    "program": "$ZED_WORKTREE_ROOT/target/debug/${ZED_STEM:main}",
+    "stdio": ["$ZED_WORKTREE_ROOT/input.txt", null, null],
+  },
+]

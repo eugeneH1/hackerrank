@@ -1,0 +1,4 @@
+/rust/target
+node_modules/
+Algorithms/dist/
+Algorithms/output.txt

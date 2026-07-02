@@ -21,11 +21,17 @@ fn merge(mut a: Option<Box<Node>>, mut b: Option<Box<Node>>) -> Node {
         );
         if a.as_ref().unwrap().data < b.as_ref().unwrap().data {
             let mut next_node = a.take();
-            a = next_node.as_mut().unwrap().next.take();
+            match next_node.as_mut().unwrap().next {
+                Some(_) => a = next_node.as_mut().unwrap().next.take(),
+                None => (),
+            }
             current.next = next_node;
         } else {
             let mut next_node = b.take();
-            b = next_node.as_mut().unwrap().next.take();
+            match next_node.as_mut().unwrap().next {
+                Some(_) => b = next_node.as_mut().unwrap().next.take(),
+                None => (),
+            }
             current.next = next_node;
         }
         current = current.next.as_mut().unwrap();

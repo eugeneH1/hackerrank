@@ -1,15 +1,7 @@
 function taumBday(b: number, w: number, bc: number, wc: number, z: number): number {
-  let cost = 0;
-  if (bc + z < wc) {
-    cost += b * bc;
-    cost += w * (bc + z);
-  } else if (wc + z < bc) {
-    cost += w * wc;
-    cost += b * (wc + z);
-  } else {
-    cost += wc * w + bc * b;
-  }
-  return cost;
+  let blackCost = Math.min(bc, (wc + z));
+  let whiteCost = Math.min(wc, (bc + z));
+  return b * blackCost + w * whiteCost;
 }
 
 
